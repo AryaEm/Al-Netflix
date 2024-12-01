@@ -1,0 +1,77 @@
+@import url("https://fonts.cdnfonts.com/css/broadmen");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .broadmen {
+    font-family: "Broadmen", sans-serif;
+  }
+
+  .gummy {
+    font-family: "Sour Gummy", sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-linear-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+.custom-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(90, 99, 156, 0) 100%
+  );
+}
+
+  .phone-gradient {
+    background: linear-gradient(
+      180deg, /* Ubah arah gradient menjadi dari atas ke bawah */
+      rgba(90, 99, 156, 0) 0%, /* Warna transparan di atas */
+      rgba(0, 0, 0, 1) 100%  /* Warna hitam di bawah */
+    );
+}
+
+  .gradint-5 {
+    background: linear-gradient(
+      180deg, /* Ubah arah gradient menjadi dari atas ke bawah */
+      rgba(90, 99, 156, 0) 0%, /* Warna transparan di atas */
+      rgba(0, 0, 0, 0.167) 50%, /* Warna transparan di atas */
+      rgba(0, 0, 0, 1) 100%  /* Warna hitam di bawah */
+    );
+}
+
+.brd {
+  border: 3px solid cadetblue;
+}
+
+@layer utilities {
+  .scrollbar-custom {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4b5563 #d1d5db; /* Firefox */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width for Chrome/Safari */
+    height: 8px; /* Horizontal scrollbar height */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #4b5563; /* Handle color */
+    border-radius: 9999px; /* Rounded corners */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background-color: #d1d5db; /* Track color */
+  }
+}
