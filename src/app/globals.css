@@ -75,3 +75,8 @@
     background-color: #d1d5db; /* Track color */
   }
 }
+
+.primary-color {
+  background-color: #E60810;
+  color: #E60810;
+}

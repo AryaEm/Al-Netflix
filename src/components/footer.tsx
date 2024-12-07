@@ -6,7 +6,7 @@ import { SiTiktok } from "react-icons/si";
 export default function Footer() {
     return (
         <>
-            <div className="xl:h-14 h-fit bg-black flex xl:flex-row flex-col items-center justify-center xl:gap-12 gap-3 text-center text-zinc-300 font-semibold">
+            <div className="xl:h-14 h-fit bg-black xl:flex hidden xl:flex-row flex-col items-center justify-center xl:gap-12 gap-3 text-center text-zinc-300 font-semibold xl:pb-0 pb-7">
                 <Link href={'https://www.instagram.com/gawrrra/'} target="_blank" className="flex items-center justify-center gap-2">
                     <AiFillInstagram className="text-xl" />
                     @gawrrra
